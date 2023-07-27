@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Battle Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Space Battlers</h1>
+    <div id="spaceships">
+      <div class="ship" id="alien-ship-1">
+        <img src="images/alien_ship.png" alt="Alien Ship 1">
+        <div class="ship-details">
+          <p>Hull: <span id="alien-hull-1">6</span></p>
+          <p>Firepower: <span id="alien-firepower-1">3</span></p>
+          <p>Accuracy: <span id="alien-accuracy-1">0.7</span></p>
+        </div>
+      </div>
+      <!-- Add similar divs for other alien ships -->
+      <div class="ship" id="alien-ship-2">
+        <img src="images/alien_ship2.png" alt="Alien Ship 2">
+        <div class="ship-details">
+          <p>Hull: <span id="alien-hull-2">6</span></p>
+          <p>Firepower: <span id="alien-firepower-2">3</span></p>
+          <p>Accuracy: <span id="alien-accuracy-2">0.7</span></p>
+        </div>
+      </div>
+      <!-- Add more alien ships here -->
+    </div>
+    <div id="uss-assembly">
+      <img src="images/uss_assembly.png" alt="USS Assembly">
+      <div class="ship-details">
+        <p>Hull: <span id="uss-hull">20</span></p>
+        <p>Firepower: <span id="uss-firepower">5</span></p>
+        <p>Accuracy: <span id="uss-accuracy">0.7</span></p>
+      </div>
+    </div>
+    <button onclick="attack()">Attack Alien Ship</button>
+    <button onclick="retreat()">Retreat</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
